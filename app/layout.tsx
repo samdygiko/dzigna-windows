@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Serif_Display, DM_Sans } from "next/font/google";
 import "./globals.css";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 const dmSerif = DM_Serif_Display({
   subsets: ["latin"],
@@ -16,9 +17,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Dzigna Windows & Home Improvements | South Wales",
+  title: "Dzigna Windows & Home Improvements | Double Glazing Tonyrefail",
   description:
-    "Supply and installation of double glazing, triple glazing, windows and doors for residential and commercial properties across South Wales. Based in Tonyrefail, Porth. Call 07970 722720.",
+    "Supply and fit of double and triple glazed windows, doors and home improvements in Tonyrefail, Porth and South Wales. Call 07970 722720.",
 };
 
 export default function RootLayout({
@@ -28,7 +29,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${dmSerif.variable} ${dmSans.variable}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <WhatsAppButton />
+      </body>
     </html>
   );
 }

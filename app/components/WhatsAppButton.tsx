@@ -1,0 +1,58 @@
+export default function WhatsAppButton() {
+  return (
+    <a
+      href="https://wa.me/447970722720"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat to Dzigna on WhatsApp"
+      className="wa-floating"
+      style={{
+        position: "fixed",
+        right: "20px",
+        bottom: "20px",
+        zIndex: 200,
+        background: "#25D366",
+        color: "#fff",
+        display: "inline-flex",
+        alignItems: "center",
+        gap: "0.6rem",
+        padding: "0.85rem 1.25rem",
+        borderRadius: "999px",
+        boxShadow: "0 8px 24px rgba(37, 211, 102, 0.35)",
+        fontFamily: "var(--font-dm-sans), sans-serif",
+        fontSize: "0.85rem",
+        fontWeight: 600,
+        letterSpacing: "0.02em",
+        textDecoration: "none",
+        transition: "transform 0.2s, box-shadow 0.2s",
+      }}
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 32 32"
+        width="22"
+        height="22"
+        fill="#fff"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <path d="M16.004 3.2C8.94 3.2 3.2 8.94 3.2 16.004c0 2.257.59 4.46 1.709 6.396L3.2 28.8l6.585-1.724a12.762 12.762 0 0 0 6.219 1.585h.005c7.063 0 12.803-5.74 12.806-12.803 0-3.42-1.331-6.635-3.75-9.054A12.722 12.722 0 0 0 16.004 3.2Zm0 23.34h-.004a10.62 10.62 0 0 1-5.413-1.482l-.388-.23-3.907 1.024 1.043-3.81-.253-.4a10.586 10.586 0 0 1-1.621-5.638c.002-5.872 4.781-10.65 10.654-10.65 2.846 0 5.52 1.11 7.532 3.124a10.585 10.585 0 0 1 3.117 7.534c-.003 5.871-4.78 10.527-10.76 10.527Zm5.84-7.978c-.32-.16-1.893-.934-2.187-1.04-.293-.107-.507-.16-.72.16-.213.32-.825 1.04-1.012 1.253-.187.213-.373.24-.693.08-.32-.16-1.352-.498-2.575-1.587-.951-.848-1.594-1.896-1.78-2.216-.187-.32-.02-.493.14-.652.143-.143.32-.373.48-.56.16-.187.213-.32.32-.533.107-.213.053-.4-.027-.56-.08-.16-.72-1.736-.987-2.376-.26-.624-.524-.54-.72-.55a13.05 13.05 0 0 0-.613-.012c-.213 0-.56.08-.853.4-.293.32-1.12 1.094-1.12 2.667 0 1.573 1.147 3.094 1.307 3.307.16.213 2.257 3.447 5.467 4.834.764.33 1.36.527 1.825.674.767.244 1.465.21 2.017.128.616-.092 1.893-.774 2.16-1.522.267-.747.267-1.387.187-1.522-.08-.133-.293-.213-.613-.373Z" />
+      </svg>
+      <span className="wa-label">WhatsApp Us</span>
+
+      <style>{`
+        .wa-floating:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 12px 28px rgba(37, 211, 102, 0.45);
+        }
+        @media (max-width: 600px) {
+          .wa-floating .wa-label { display: none !important; }
+          .wa-floating {
+            padding: 0.85rem 0.95rem !important;
+            border-radius: 999px !important;
+          }
+        }
+      `}</style>
+    </a>
+  );
+}
