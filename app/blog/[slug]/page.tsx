@@ -34,7 +34,7 @@ export default async function BlogPostPage({
   return (
     <>
       <Nav />
-      <main style={{ paddingTop: "64px", background: "var(--bg)", minHeight: "100vh" }}>
+      <main style={{ paddingTop: "88px", background: "var(--bg)", minHeight: "100vh" }}>
         <article
           style={{
             maxWidth: "720px",

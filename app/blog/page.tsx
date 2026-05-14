@@ -13,7 +13,7 @@ export default function BlogIndexPage() {
   return (
     <>
       <Nav />
-      <main style={{ paddingTop: "64px", background: "var(--bg)", minHeight: "100vh" }}>
+      <main style={{ paddingTop: "88px", background: "var(--bg)", minHeight: "100vh" }}>
         <section
           style={{
             maxWidth: "1100px",

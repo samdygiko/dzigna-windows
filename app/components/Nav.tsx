@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 const NAV_LINKS = [
@@ -33,33 +34,59 @@ export default function Nav() {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          height: "64px",
+          height: "88px",
         }}
       >
-        <Link href="/" style={{ display: "flex", alignItems: "baseline", gap: "0.6rem", textDecoration: "none" }}>
-          <span
+        <Link
+          href="/"
+          aria-label="Dzigna Windows & Home Improvements — home"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "0.9rem",
+            textDecoration: "none",
+          }}
+        >
+          <Image
+            src="/images/logo.png"
+            alt="Dzigna Windows & Home Improvements logo"
+            width={248}
+            height={132}
+            priority
             style={{
-              fontFamily: "var(--font-dm-serif), serif",
-              fontSize: "1.2rem",
-              color: "var(--navy)",
-              letterSpacing: "0.01em",
+              height: "60px",
+              width: "auto",
+              display: "block",
             }}
-          >
-            Dzigna
-          </span>
-          <span
-            className="brand-strap"
-            style={{
-              fontFamily: "var(--font-dm-sans), sans-serif",
-              fontSize: "0.65rem",
-              fontWeight: 500,
-              letterSpacing: "0.14em",
-              textTransform: "uppercase",
-              color: "var(--muted)",
-            }}
-          >
-            Windows & Home Improvements
-          </span>
+          />
+          <div style={{ display: "flex", flexDirection: "column", lineHeight: 1 }}>
+            <span
+              className="brand-mark"
+              style={{
+                fontFamily: "var(--font-dm-serif), serif",
+                fontSize: "1.8rem",
+                color: "var(--navy)",
+                letterSpacing: "-0.005em",
+                lineHeight: 1,
+              }}
+            >
+              Dzigna
+            </span>
+            <span
+              className="brand-strap"
+              style={{
+                fontFamily: "var(--font-dm-sans), sans-serif",
+                fontSize: "0.72rem",
+                fontWeight: 500,
+                letterSpacing: "0.16em",
+                textTransform: "uppercase",
+                color: "var(--muted)",
+                marginTop: "0.45rem",
+              }}
+            >
+              Windows &amp; Home Improvements
+            </span>
+          </div>
         </Link>
 
         {/* Desktop links */}
@@ -73,7 +100,7 @@ export default function Nav() {
               href={l.href}
               style={{
                 fontFamily: "var(--font-dm-sans), sans-serif",
-                fontSize: "0.8rem",
+                fontSize: "0.85rem",
                 fontWeight: 500,
                 letterSpacing: "0.02em",
                 color: "var(--ink)",
@@ -87,13 +114,13 @@ export default function Nav() {
             href="tel:07970722720"
             style={{
               fontFamily: "var(--font-dm-sans), sans-serif",
-              fontSize: "0.75rem",
+              fontSize: "0.78rem",
               fontWeight: 600,
               letterSpacing: "0.08em",
               textTransform: "uppercase",
               background: "var(--navy)",
               color: "var(--bg)",
-              padding: "0.6rem 1.25rem",
+              padding: "0.7rem 1.3rem",
               textDecoration: "none",
             }}
           >
@@ -115,7 +142,7 @@ export default function Nav() {
             color: "var(--ink)",
           }}
         >
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
             {open ? (
               <>
                 <line x1="5" y1="5" x2="19" y2="19" />
@@ -188,6 +215,7 @@ export default function Nav() {
       <style>{`
         @media (max-width: 800px) {
           .brand-strap { display: none !important; }
+          .brand-mark { font-size: 1.45rem !important; }
           .nav-desktop { display: none !important; }
           .nav-burger { display: inline-flex !important; }
           .nav-mobile-panel { display: block !important; }
