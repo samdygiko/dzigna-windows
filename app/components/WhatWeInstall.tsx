@@ -2,34 +2,34 @@ import Image from "next/image";
 
 const tiles: { src: string; label: string; alt: string }[] = [
   {
-    src: "/images/install/windows.jpg",
+    src: "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?w=1200",
     label: "Windows",
-    alt: "uPVC casement windows installed on a residential property exterior",
+    alt: "uPVC casement windows on a house exterior",
   },
   {
-    src: "/images/install/doors.jpg",
+    src: "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?w=1200",
     label: "Doors",
-    alt: "Composite front door installation on a UK home",
+    alt: "Stylish front door of a residential home",
   },
   {
-    src: "/images/install/conservatories.jpg",
+    src: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?w=1200",
     label: "Conservatories",
-    alt: "Glass conservatory and rear extension overlooking a garden",
+    alt: "Glass conservatory attached to a home",
   },
   {
-    src: "/images/install/bifold-doors.jpg",
+    src: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?w=1200",
     label: "Bifold Doors",
-    alt: "Aluminium bifold doors opening onto a garden patio",
+    alt: "Large glass bifold doors opening to a garden",
   },
   {
-    src: "/images/install/soffits-fascias.jpg",
+    src: "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?w=1200",
     label: "Soffits & Fascias",
-    alt: "Clean uPVC soffits and fascias finishing the roofline of a house",
+    alt: "Clean house exterior roofline showing soffits and fascias",
   },
   {
-    src: "/images/install/warm-roof.jpg",
+    src: "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?w=1200",
     label: "Warm Roof Conversions",
-    alt: "Warm roof flat-roof conversion on a residential property",
+    alt: "House with a tiled warm roof extension",
   },
 ];
 
