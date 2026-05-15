@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { PRODUCTS } from "../lib/products";
 
 const NAV_LINKS = [
@@ -16,6 +16,23 @@ const NAV_LINKS = [
 export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [productsOpen, setProductsOpen] = useState(false);
+  const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  function openDropdown() {
+    if (closeTimerRef.current) {
+      clearTimeout(closeTimerRef.current);
+      closeTimerRef.current = null;
+    }
+    setProductsOpen(true);
+  }
+
+  function scheduleCloseDropdown() {
+    if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
+    closeTimerRef.current = setTimeout(() => {
+      setProductsOpen(false);
+      closeTimerRef.current = null;
+    }, 150);
+  }
 
   return (
     <nav
@@ -105,14 +122,19 @@ export default function Nav() {
 
           {/* Products dropdown */}
           <div
-            onMouseEnter={() => setProductsOpen(true)}
-            onMouseLeave={() => setProductsOpen(false)}
-            style={{ position: "relative" }}
+            onMouseEnter={openDropdown}
+            onMouseLeave={scheduleCloseDropdown}
+            style={{
+              position: "relative",
+              paddingBottom: "1.25rem",
+              marginBottom: "-1.25rem",
+            }}
           >
             <button
               type="button"
-              onClick={() => setProductsOpen((v) => !v)}
+              onClick={() => (productsOpen ? scheduleCloseDropdown() : openDropdown())}
               aria-expanded={productsOpen}
+              aria-haspopup="menu"
               style={{
                 ...navLinkSt,
                 background: "transparent",
@@ -129,14 +151,18 @@ export default function Nav() {
             </button>
             {productsOpen && (
               <div
+                role="menu"
+                onMouseEnter={openDropdown}
+                onMouseLeave={scheduleCloseDropdown}
                 style={{
                   position: "absolute",
-                  top: "calc(100% + 0.85rem)",
+                  top: "100%",
                   left: 0,
                   background: "var(--bg)",
                   border: "1px solid var(--border)",
                   minWidth: "260px",
-                  padding: "0.6rem 0",
+                  paddingTop: "8px",
+                  paddingBottom: "0.6rem",
                   boxShadow: "0 12px 28px rgba(28,58,94,0.08)",
                   zIndex: 10,
                 }}
