@@ -101,6 +101,25 @@ export default function Hero() {
           </a>
 
           <a
+            href="/configure"
+            style={{
+              fontFamily: "var(--font-dm-sans), sans-serif",
+              fontSize: "0.85rem",
+              fontWeight: 600,
+              letterSpacing: "0.08em",
+              textTransform: "uppercase",
+              background: "transparent",
+              color: "var(--navy)",
+              border: "1.5px solid var(--navy)",
+              padding: "0.9rem 1.8rem",
+              display: "inline-block",
+              textDecoration: "none",
+            }}
+          >
+            Design Yours →
+          </a>
+
+          <a
             href="https://wa.me/447970722720"
             target="_blank"
             rel="noopener noreferrer"
