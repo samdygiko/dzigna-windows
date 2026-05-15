@@ -48,15 +48,17 @@ export default function Nav() {
           }}
         >
           <Image
-            src="/images/logo.png"
+            src="/images/dzigna-logo.png"
             alt="Dzigna Windows & Home Improvements logo"
-            width={248}
-            height={132}
+            width={1024}
+            height={1024}
             priority
             style={{
-              height: "60px",
+              height: "64px",
               width: "auto",
               display: "block",
+              background: "transparent",
+              boxShadow: "none",
             }}
           />
           <div style={{ display: "flex", flexDirection: "column", lineHeight: 1 }}>
