@@ -1,28 +1,38 @@
 const SERVICES = [
   {
     num: "01",
-    title: "Double Glazing",
-    desc: "Energy-efficient double glazed units that reduce heat loss, cut energy bills, and minimise outside noise. Fitted to any property type.",
+    title: "Windows",
+    desc: "Casement, sash, tilt-and-turn and bay windows in uPVC and composite. Double and triple glazed units, measured, made and installed to spec.",
   },
   {
     num: "02",
-    title: "Triple Glazing",
-    desc: "Maximum thermal performance for new builds and upgrades. Three glass panes with two insulating gas-filled chambers.",
+    title: "Doors",
+    desc: "Composite front doors, French doors, patio doors. Secure, draught-free and built to last.",
   },
   {
     num: "03",
-    title: "Windows",
-    desc: "Casement, sash, tilt-and-turn and bay windows in uPVC and composite. Measured, made, and installed to exact specification.",
+    title: "Conservatories",
+    desc: "Sympathetic glass extensions that add real living space without losing the feel of the original property.",
   },
   {
     num: "04",
-    title: "Doors",
-    desc: "Composite front doors, French doors, bi-fold and patio doors. Secure, draught-free, and built to last.",
+    title: "Bifold Doors",
+    desc: "Slim-line aluminium bifolds for rear extensions, garden rooms and bright open-plan reworks.",
   },
   {
     num: "05",
+    title: "Soffits & Fascias",
+    desc: "uPVC soffits, fascias and guttering to finish the roofline cleanly and keep weather out for decades.",
+  },
+  {
+    num: "06",
+    title: "Warm Roof Conversions",
+    desc: "Replace a tired conservatory roof with a fully insulated warm roof — usable year-round, no extra heating bills.",
+  },
+  {
+    num: "07",
     title: "Residential & Commercial",
-    desc: "Houses, flats, bungalows, and commercial premises across South Wales. One installer for the whole project.",
+    desc: "Houses, flats, bungalows and commercial properties across South Wales. One installer for the whole project.",
   },
 ];
 
