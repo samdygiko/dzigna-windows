@@ -2,7 +2,7 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "Privacy Policy | Dzigna Windows & Home Improvements",
+  title: "Privacy Policy",
   description:
     "How Dzigna Windows & Home Improvements handles the personal data submitted via our quote forms and website.",
   alternates: { canonical: "https://www.dzignawindows.co.uk/privacy-policy" },

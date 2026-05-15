@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import { posts } from "./posts";
 
 export const metadata = {
-  title: "Blog — Dzigna Windows & Home Improvements",
+  title: "Blog",
   description:
     "Notes on windows, doors and home improvements from the Dzigna team in Tonyrefail, South Wales.",
 };

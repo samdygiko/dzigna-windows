@@ -15,7 +15,7 @@ export const PRODUCTS: Product[] = [
     short: "uPVC, aluminium and timber windows — double or triple glazed.",
     description:
       "Casement, sash, tilt-and-turn and bay windows in uPVC, aluminium and composite frames. Double or triple glazed for thermal performance, with A-rated units fitted as standard. Measured, manufactured and installed to your exact spec across South Wales.",
-    heroImage: "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?w=1600",
+    heroImage: "/images/products/window.jpg",
     heroAlt: "uPVC casement windows on a residential property exterior",
     included: [
       "Free at-home survey and measurement",
@@ -30,7 +30,7 @@ export const PRODUCTS: Product[] = [
     short: "Composite front doors, French doors, patio doors.",
     description:
       "Secure, draught-free composite front doors that hold their finish for 25 years. French doors, patio sliders and back doors fitted to match your existing frames. Multi-point locking as standard, with a range of glass and panel designs.",
-    heroImage: "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?w=1600",
+    heroImage: "/images/products/door.jpg",
     heroAlt: "A stylish front door on a residential home",
     included: [
       "Composite, uPVC and aluminium options",
@@ -45,7 +45,7 @@ export const PRODUCTS: Product[] = [
     short: "Glass extensions that add real living space.",
     description:
       "Bespoke conservatories that add usable, year-round living space without losing the feel of your home. Victorian, Edwardian, Lean-To and P-Shape designs. Glass, polycarbonate or fully insulated warm roofs available.",
-    heroImage: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?w=1600",
+    heroImage: "/images/products/conservatory.jpg",
     heroAlt: "A bright glass conservatory attached to a home",
     included: [
       "Free design consultation and plans",
@@ -60,7 +60,7 @@ export const PRODUCTS: Product[] = [
     short: "Slim-line aluminium bifolds for rear extensions.",
     description:
       "Slim-line aluminium bifold doors that fold flat to open up a room. 2 to 6 panel configurations, with thermally broken frames in any RAL colour. Perfect for rear extensions, garden rooms and bright open-plan reworks.",
-    heroImage: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?w=1600",
+    heroImage: "/images/products/bifold.jpg",
     heroAlt: "Large glass bifold doors opening onto a garden",
     included: [
       "2 to 6 panel configurations",
@@ -75,7 +75,7 @@ export const PRODUCTS: Product[] = [
     short: "uPVC soffits, fascias and guttering for the roofline.",
     description:
       "Maintenance-free uPVC soffits, fascias and guttering to finish the roofline cleanly and keep weather out for decades. Available in white, brown, black and woodgrain finishes to match your property.",
-    heroImage: "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?w=1600",
+    heroImage: "/images/products/soffit.jpg",
     heroAlt: "Clean house exterior roofline with soffits, fascias and guttering",
     included: [
       "Full strip-out and disposal of old fascias",
@@ -90,7 +90,7 @@ export const PRODUCTS: Product[] = [
     short: "Replace a cold conservatory roof with a usable warm one.",
     description:
       "Convert a tired or freezing conservatory roof into a fully insulated warm roof — usable year-round, no extra heating bills, dramatically reduced solar glare in summer. Choice of slate, Roman or plain tile finishes.",
-    heroImage: "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?w=1600",
+    heroImage: "/images/products/warmroof.jpg",
     heroAlt: "A house with a tiled warm roof extension",
     included: [
       "Full structural survey and Building Regulations sign-off",

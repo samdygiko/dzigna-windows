@@ -17,7 +17,10 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Dzigna Windows & Home Improvements | Double Glazing Tonyrefail",
+  title: {
+    default: "Dzigna Windows & Home Improvements",
+    template: "%s | Dzigna Windows & Home Improvements",
+  },
   description:
     "Supply and fit of double and triple glazed windows, doors and home improvements in Tonyrefail, Porth and South Wales. Free quotes. Call 07970 722720.",
   keywords:
@@ -25,7 +28,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.dzignawindows.co.uk"),
   alternates: { canonical: "https://www.dzignawindows.co.uk" },
   icons: {
-    icon: "/favicon.png",
+    icon: [{ url: "/favicon.png", type: "image/png" }],
     shortcut: "/favicon.png",
     apple: "/favicon.png",
   },
@@ -115,7 +118,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${dmSerif.variable} ${dmSans.variable}`}>
       <head>
-        <link rel="icon" href="/favicon.png" type="image/png" />
+        <link rel="icon" href="/favicon.png?v=2" type="image/png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}

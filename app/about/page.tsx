@@ -3,7 +3,7 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "About — Dzigna Windows & Home Improvements",
+  title: "About",
   description:
     "South Wales' trusted window and door specialists. Trading in Tonyrefail, Porth and across the Rhondda Cynon Taf area. Supply and fit of double and triple glazed units, windows, doors and home improvements.",
 };

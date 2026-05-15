@@ -16,9 +16,9 @@ export async function generateMetadata({
 }) {
   const { slug } = await params;
   const product = getProduct(slug);
-  if (!product) return { title: "Product not found — Dzigna Windows" };
+  if (!product) return { title: "Product not found" };
   return {
-    title: `${product.name} | Dzigna Windows & Home Improvements`,
+    title: product.name,
     description: product.short,
     alternates: { canonical: `https://www.dzignawindows.co.uk/products/${product.slug}` },
   };

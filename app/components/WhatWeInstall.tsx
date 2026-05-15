@@ -2,32 +2,32 @@ import Image from "next/image";
 
 const tiles: { src: string; label: string; alt: string }[] = [
   {
-    src: "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?w=1200",
+    src: "/images/products/window.jpg",
     label: "Windows",
     alt: "uPVC casement windows on a house exterior",
   },
   {
-    src: "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?w=1200",
+    src: "/images/products/door.jpg",
     label: "Doors",
     alt: "Stylish front door of a residential home",
   },
   {
-    src: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?w=1200",
+    src: "/images/products/conservatory.jpg",
     label: "Conservatories",
     alt: "Glass conservatory attached to a home",
   },
   {
-    src: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?w=1200",
+    src: "/images/products/bifold.jpg",
     label: "Bifold Doors",
     alt: "Large glass bifold doors opening to a garden",
   },
   {
-    src: "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?w=1200",
+    src: "/images/products/soffit.jpg",
     label: "Soffits & Fascias",
     alt: "Clean house exterior roofline showing soffits and fascias",
   },
   {
-    src: "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?w=1200",
+    src: "/images/products/warmroof.jpg",
     label: "Warm Roof Conversions",
     alt: "House with a tiled warm roof extension",
   },

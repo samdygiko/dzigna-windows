@@ -15,9 +15,9 @@ export async function generateMetadata({
 }) {
   const { slug } = await params;
   const post = findPost(slug);
-  if (!post) return { title: "Article not found — Dzigna" };
+  if (!post) return { title: "Article not found" };
   return {
-    title: `${post.title} — Dzigna Blog`,
+    title: post.title,
     description: post.excerpt,
   };
 }

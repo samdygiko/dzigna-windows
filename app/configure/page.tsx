@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import ConfiguratorClient from "./ConfiguratorClient";
 
 export const metadata = {
-  title: "Design Your Quote | Dzigna Windows & Home Improvements",
+  title: "Design Your Quote",
   description:
     "Configure your windows, doors, conservatory, bifolds or warm roof in four steps. Free, no-obligation quote from Dzigna Windows in Tonyrefail.",
   alternates: { canonical: "https://www.dzignawindows.co.uk/configure" },
