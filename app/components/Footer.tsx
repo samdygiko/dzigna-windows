@@ -70,7 +70,7 @@ export default function Footer() {
                 marginTop: "0.3rem",
               }}
             >
-              9 Bryn Rhedyn, Tonyrefail, CF39 8EZ
+              9 Bryn Rhedyn, Tonyrefail, Porth, CF39 8EZ
             </p>
           </div>
 

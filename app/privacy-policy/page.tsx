@@ -13,7 +13,7 @@ const sections: { heading: string; body: string[] }[] = [
     heading: "Who we are",
     body: [
       "Dzigna Windows & Home Improvements (\"we\", \"us\", \"our\") is the data controller for the personal information you provide through this website.",
-      "Address: 9 Bryn Rhedyn, Tonyrefail, CF39 8EZ.",
+      "Address: 9 Bryn Rhedyn, Tonyrefail, Porth, CF39 8EZ.",
       "Phone: 07970 722720.",
       "Website: dzignawindows.co.uk.",
     ],

@@ -100,8 +100,8 @@ export default function Contact() {
                 Address
               </p>
               <p style={{ fontFamily: "var(--font-dm-sans), sans-serif", fontSize: "0.875rem", fontWeight: 300, color: "rgba(250,250,248,0.7)", lineHeight: 1.7 }}>
+                9 Bryn Rhedyn<br />
                 Tonyrefail, Porth<br />
-                Rhondda Cynon Taf<br />
                 CF39 8EZ · South Wales
               </p>
             </div>
