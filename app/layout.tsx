@@ -26,6 +26,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.dzignawindows.co.uk" },
   icons: {
     icon: "/favicon.png",
+    shortcut: "/favicon.png",
     apple: "/favicon.png",
   },
   openGraph: {
@@ -114,6 +115,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${dmSerif.variable} ${dmSans.variable}`}>
       <head>
+        <link rel="icon" href="/favicon.png" type="image/png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
